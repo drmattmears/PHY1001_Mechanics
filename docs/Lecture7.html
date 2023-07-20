@@ -64,6 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lecture7';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Lecture 8 - Rotational motion and moments of inertia" href="Lecture8.html" />
     <link rel="prev" title="Lecture 6 - Conservation of momentum in 2D" href="Lecture6.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -151,7 +152,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    PHY10006: Fundamentals of Physics
+                    PHY11006: Fundamentals of Physics
                 </a>
             </li>
         </ul>
@@ -164,6 +165,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Lecture5.html">Lecture 5 - Conservation of momentum in 1D</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture6.html">Lecture 6 - Conservation of momentum in 2D</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 7 - Circular motion and centripetal force</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture8.html">Lecture 8 - Rotational motion and moments of inertia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture9.html">Lecture 9 - Rolling Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture10.html">Lecture 10 - Torque and rotational acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture11.html">Lecture 11 - Gravity and Kepler’s Laws</a></li>
 </ul>
 
     </div>
@@ -406,7 +411,7 @@ document.write(`
 \[\begin{align*}
 ma = \frac{mv_t^2}{r} &amp;= \sum F_r
 \end{align*}\]</div>
-<p>So we have shown that there needs to be this centripetal force acting to cause the centripetal acceleration. But what exactly \textbf{is} this force? The answer depends very much on the system that you are concerned with. For a planet orbiting a star the centripetal force acting on the planet is gravity, whereas in the Bohr model of the atom the electrostatic force acts to keep the electron orbiting the nucleus. We are going to come back to looking more at gravity in <span class="xref myst">Lecture 11</span> and I will leave electrostatic forces for your course next semester. But we can think of some simple everyday examples using the physics we have already covered in this course and before.</p>
+<p>So we have shown that there needs to be this centripetal force acting to cause the centripetal acceleration. But what exactly \textbf{is} this force? The answer depends very much on the system that you are concerned with. For a planet orbiting a star the centripetal force acting on the planet is gravity, whereas in the Bohr model of the atom the electrostatic force acts to keep the electron orbiting the nucleus. We are going to come back to looking more at gravity in <a class="reference internal" href="Lecture11.html#lecture11"><span class="std std-ref">Lecture 11</span></a> and I will leave electrostatic forces for your course next semester. But we can think of some simple everyday examples using the physics we have already covered in this course and before.</p>
 <div class="section" id="ball-on-a-string-two-examples">
 <h3>Ball on a string - two examples<a class="headerlink" href="#ball-on-a-string-two-examples" title="Permalink to this headline">#</a></h3>
 <p>Imagine we have a ball of mass <span class="math notranslate nohighlight">\(m\)</span> on a string of length <span class="math notranslate nohighlight">\(L\)</span> We are going to look at two different cases of the ball making a circular path parallel to the <a class="reference internal" href="#sec-l7-horiz"><span class="std std-ref">horizontal plane</span></a> and the <a class="reference internal" href="#sec-l7-conical"><span class="std std-ref">conical pendulum</span></a>.</p>
@@ -489,7 +494,7 @@ mg\sin\theta &amp;= ma_t\\
 </div>
 <div class="section" id="relating-rotational-and-linear-quantities">
 <h2>Relating rotational and linear quantities<a class="headerlink" href="#relating-rotational-and-linear-quantities" title="Permalink to this headline">#</a></h2>
-<p>There are three important relationships that we make use of time and time again when relating linear and rotational dynamics. I will state the results here but the (rather simple) proofs and details are found in and around equations <code class="xref eq docutils literal notranslate"><span class="pre">eq:C9_rollv</span></code> and <code class="xref eq docutils literal notranslate"><span class="pre">eq:C9_rolla</span></code> when we look at rolling motion.</p>
+<p>There are three important relationships that we make use of time and time again when relating linear and rotational dynamics. I will state the results here but the (rather simple) proofs and details are found in and around equations <a class="reference internal" href="Lecture9.html#equation-eq-c9-rollv">(55)</a> and <a class="reference internal" href="Lecture9.html#equation-eq-c9-rolla">(56)</a> when we look at rolling motion.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 s &amp;= R\theta\\
@@ -575,17 +580,18 @@ Question</label><div class="sd-tab-content docutils">
 </input><label class="sd-tab-label" for="sd-tab-item-7">
 Hint</label><div class="sd-tab-content docutils">
 <p>Nothing too complicated required here, just remember to convert to the right units.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-````{tab-item} Solution
-First we convert $175\text{ rpm} = \dfrac{175}{60} = 18$ revolutions per second, and thus the angular velocity is
-\begin{align*}
-\omega &amp;= 2\pi f = 18\text{ radians s}^{-1}
-\end{align*}
-The tangential speed at the end of the centrifuge arm is 
-```{math}
-v=\omega R = 1.6\times10^2\text{ m s}^{-1}
-</pre></div>
 </div>
+<input id="sd-tab-item-8" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-8">
+Solution</label><div class="sd-tab-content docutils">
+<p>First we convert <span class="math notranslate nohighlight">\(175\text{ rpm} = \dfrac{175}{60} = 18\)</span> revolutions per second, and thus the angular velocity is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\omega &amp;= 2\pi f = 18\text{ radians s}^{-1}
+\end{align*}\]</div>
+<p>The tangential speed at the end of the centrifuge arm is</p>
+<div class="math notranslate nohighlight">
+\[v=\omega R = 1.6\times10^2\text{ m s}^{-1}\]</div>
 <p>and the centripetal acceleration is</p>
 <div class="math notranslate nohighlight">
 \[a_{\text{cent.}} = \omega^2R = 2.9\times10^{3}\text{ m s}^{-2}\]</div>
@@ -596,8 +602,8 @@ v=\omega R = 1.6\times10^2\text{ m s}^{-1}
 <div class="dropdown hint admonition">
 <p class="admonition-title">Question 4</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-8" name="sd-tab-set-3" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-8">
+<input checked="checked" id="sd-tab-item-9" name="sd-tab-set-3" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-9">
 Question</label><div class="sd-tab-content docutils">
 <p>Calculate the following centripetal accelerations as multiples of <span class="math notranslate nohighlight">\(g\)</span>:</p>
 <ol class="arabic simple">
@@ -607,13 +613,13 @@ Question</label><div class="sd-tab-content docutils">
 <li><p>acceleration of a point on the rim of a bicycle wheel of diameter 66 cm if the bicycle is travelling along at 11 m s<span class="math notranslate nohighlight">\(^{-1}\)</span></p></li>
 </ol>
 </div>
-<input id="sd-tab-item-9" name="sd-tab-set-3" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-9">
+<input id="sd-tab-item-10" name="sd-tab-set-3" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-10">
 Hint</label><div class="sd-tab-content docutils">
 <p>All four of these questions use the same basic formulae, just in different ways. A good starting point is to write the variables that you know, and see which equations have the right combination of unknown and desired variables.</p>
 </div>
-<input id="sd-tab-item-10" name="sd-tab-set-3" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-10">
+<input id="sd-tab-item-11" name="sd-tab-set-3" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-11">
 Solution</label><div class="sd-tab-content docutils">
 <p><strong>1</strong>
 The centripetal acceleration is the same as that of a person standing on the edge of a disc with radius <span class="math notranslate nohighlight">\(r=R_{\text{Earth}}\cos\theta\)</span> where <span class="math notranslate nohighlight">\(\theta = 45^{\circ}\)</span>. This gives</p>
@@ -652,8 +658,8 @@ a &amp;= \frac{v^2}{r}\\
 <div class="dropdown hint admonition">
 <p class="admonition-title">Question 5</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-11" name="sd-tab-set-4" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-11">
+<input checked="checked" id="sd-tab-item-12" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-12">
 Question</label><div class="sd-tab-content docutils">
 <p>A particle moves in a plane and its position can be described by Cartesian coordinates <span class="math notranslate nohighlight">\((x,y)\)</span> or polar coordinates <span class="math notranslate nohighlight">\((r,\theta)\)</span>, where <span class="math notranslate nohighlight">\(x=r\cos\theta\)</span> and <span class="math notranslate nohighlight">\(y=r\sin\theta\)</span>.</p>
 <ol class="arabic simple">
@@ -669,14 +675,14 @@ a_{\theta} &amp;= -a_x\sin\theta + a_y\cos\theta
 <li><p>Substitute the values for <span class="math notranslate nohighlight">\(a_x\)</span> and <span class="math notranslate nohighlight">\(a_y\)</span> found in part (a) to obtain general expressions for <span class="math notranslate nohighlight">\(a_r\)</span> and <span class="math notranslate nohighlight">\(a_\theta\)</span> in polar coordinates.</p></li>
 </ol>
 </div>
-<input id="sd-tab-item-12" name="sd-tab-set-4" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-12">
+<input id="sd-tab-item-13" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-13">
 Hint</label><div class="sd-tab-content docutils">
 <p>You <strong>absolutely</strong> need to use diagrams to solve these problems.</p>
 <p>The maths isn’t too complicated but it’s quite longwinded and easy to get lost, so make sure you lay things out clearly to ensure you don’t drop terms (particularly in part 1 where you need to use two different differentiation methods).</p>
 </div>
-<input id="sd-tab-item-13" name="sd-tab-set-4" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-13">
+<input id="sd-tab-item-14" name="sd-tab-set-4" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-14">
 Solution</label><div class="sd-tab-content docutils">
 <p><strong>1</strong>
 For this it is easier to make use of the `dot’ notation of time derivatives, such that <span class="math notranslate nohighlight">\(v_x = \dot{x}\)</span>, <span class="math notranslate nohighlight">\(a_x=\ddot{x}=\dot{v}_x\)</span>, <span class="math notranslate nohighlight">\(v_y=\dot{y}\)</span> and <span class="math notranslate nohighlight">\(a_y=\ddot{y}=\dot{v}_y\)</span>. We work through the calculus with care:</p>
@@ -757,6 +763,15 @@ a_\theta &amp;= -a_x\sin\theta + a_y\cos\theta\\
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Lecture 6 - Conservation of momentum in 2D</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="Lecture8.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Lecture 8 - Rotational motion and moments of inertia</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
