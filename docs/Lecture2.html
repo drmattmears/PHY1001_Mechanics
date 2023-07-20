@@ -367,7 +367,6 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-constant-acceleration">Non-constant acceleration</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-pendulum">Simple pendulum</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#free-fall-in-a-fluid">Free fall in a fluid</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravity">Gravity.</a></li>
 </ul>
@@ -450,54 +449,17 @@ x(t) &amp;= \int_0^t v(t)\,\mathrm{d}t = \frac{Jt^3}{6} +\frac{a_0t^2}{2}+v_0t+x
 </div>
 <div class="section" id="non-constant-acceleration">
 <h2>Non-constant acceleration<a class="headerlink" href="#non-constant-acceleration" title="Permalink to this headline">#</a></h2>
-<p>So you may be asking yourself why I have spent some much time stressing that you should be very careful with the suvat equations. And you should be, because they only work under a very specific condition that actually is a rather unusual one in the real world. It is much more common that the systems you will now be dealing with in your degree have a non-constant acceleration. We are going to look at two particular situations, the <a class="reference internal" href="#sec-c2-pend"><span class="std std-ref">simple pendulum</span></a> and <a class="reference internal" href="#sec-c2-air"><span class="std std-ref">free fall in a fluid</span></a>, plus an aside discussion on <a class="reference internal" href="#sec-c2-gravity"><span class="std std-ref">gravity</span></a> that we will not formally derive but is a good mental exercise for you.</p>
-<div class="section" id="simple-pendulum">
-<span id="sec-c2-pend"></span><h3>Simple pendulum<a class="headerlink" href="#simple-pendulum" title="Permalink to this headline">#</a></h3>
-<p>The simple pendulum is often taught in pre-University courses but my experience is that the approach taken is similar to that we saw for projectile motion in <a class="reference internal" href="Lecture1.html#lecture1"><span class="std std-ref">Lecture 1</span></a>. Some special points are considered, namely the equilibrium point and the maximum amplitude, but the entire path itself is not explored in depth. We are going to change that now because the simple pendulum is a really simple system to visualise that involves a non-constant acceleration.</p>
-<p>Consider the following diagram of a pendulum of length <span class="math notranslate nohighlight">\(l\)</span> swinging on the orange path between two maximum amplitudes. Forgive me for jumping ahead a chapter for a brief moment but I have made use of the concept of a force, but what I have used is most definitely not new to you so let us run with it for now and leave the deeper discussions about forces until <a class="reference internal" href="Lecture3.html#lecture3"><span class="std std-ref">Lecture 3</span></a>.</p>
-<div class="margin sidebar">
-<p class="sidebar-title"></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We know that force and acceleration are intricately linked. Probably not a spoiler, but we will cover Newton’s Laws in <a class="reference internal" href="Lecture3.html#lecture3"><span class="std std-ref">Lecture 3</span></a>.</p>
-</div>
-</div>
-<p>Assuming that we are playing with this pendulum on Earth but also happen to be standing in a vacuum, the only force acting on the pendulum mass is due to gravity. This means that the acceleration of the mass along the orange path, i.e. the tangential direction, is equal to the component acting in the tangential direction</p>
-<div class="math notranslate nohighlight" id="equation-eq-c2-gaccel">
-<span class="eqno">(17)<a class="headerlink" href="#equation-eq-c2-gaccel" title="Permalink to this equation">#</a></span>\[a_T(\theta) = g\sin\theta\]</div>
-<p>as shown in <a class="reference internal" href="#fig-c2-pendulum"><span class="std std-numref">Fig. 5</span></a> below. I am using the notation <span class="math notranslate nohighlight">\(a_T(\theta)\)</span> to be really explicit that this is the acceleration acting in the tangential direction <strong>and</strong> that it is a function of <span class="math notranslate nohighlight">\(\theta\)</span> and is therefore not constant.</p>
-<div class="figure align-center" id="fig-c2-pendulum">
-<a class="reference internal image-reference" href="_images/C2_pendulum.png"><img alt="A pendulum oscillating between two maximum amplitudes. The only force acting is gravity which acts downwards as indicated by the downwards arrow and has magnitude $mg$. This force can be resolved into two components, one pointing along the length of the pendulum (with magnitude $mg\cos\theta$) and the other pointing in the direction of motion (with magnitude $mg\sin\theta$)." src="_images/C2_pendulum.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Caption A pendulum oscillating between two maximum amplitudes. The only force acting is gravity which acts downwards as indicated by the downwards arrow and has magnitude <span class="math notranslate nohighlight">\(mg\)</span>. This force can be resolved into two components, one pointing along the length of the pendulum (with magnitude <span class="math notranslate nohighlight">\(mg\cos\theta\)</span>) and the other pointing in the direction of motion (with magnitude <span class="math notranslate nohighlight">\(mg\sin\theta\)</span>.</span><a class="headerlink" href="#fig-c2-pendulum" title="Permalink to this image">#</a></p>
-</div>
-<p>But we do have a well defined function for how the acceleration varies with angular displacement so we can construct an equation that describe the motion of the mass in terms of angular displacement and time, with some constants for good measure.</p>
-<p>We first need to switch to a more convenient coordinate system. So instead of considering the linear displacement we want to know the <strong>arc length</strong> <span class="math notranslate nohighlight">\(s\)</span> in terms of the displaced angle. From this we can calculate the velocity and acceleration of the mass as</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-s(\theta) &amp;=l\theta,\\
-v_T(\theta) &amp;= \frac{\mathrm{d}s}{\mathrm{d}t}=l\frac{\mathrm{d}\theta}{\mathrm{d}t},\\
-a_T(\theta) &amp;= \frac{\mathrm{d}^2s}{\mathrm{d}t^2} = l\frac{\mathrm{d}^2\theta}{\mathrm{d}t^2}
-\end{align*}\]</div>
-<p>We can combine this expression for <span class="math notranslate nohighlight">\(a_T(\theta)\)</span> with equation <a class="reference internal" href="#equation-eq-c2-gaccel">(17)</a> to find</p>
-<div class="math notranslate nohighlight" id="equation-eq-c2-simple">
-<span class="eqno">(18)<a class="headerlink" href="#equation-eq-c2-simple" title="Permalink to this equation">#</a></span>\[\begin{split}l\frac{\mathrm{d}^2\theta}{\mathrm{d}t^2} &amp;= -g\sin\theta,\nonumber\\
-\frac{\mathrm{d}^2\theta}{\mathrm{d}t^2} &amp;+\frac{g}{l}\sin\theta = 0\end{split}\]</div>
-<p>I hope that you can see that this equation that describes a simple pendulum in terms of the acceleration and displacement is very different to the suvat equations. If you tried to force the suvat equations into the system it simply wouldn’t work, which is why it is imperative to always go back to the assumptions of the system you are studying and construct the theoretical framework appropriately.</p>
-<p>It turns out that equation <a class="reference internal" href="#equation-eq-c2-simple">(18)</a> is a differential equation that is not easy to solve. This particular instance is a second-order nonlinear ordinary differential equation. Differential equations crop up everywhere in physics so you will see these time and time again, but for now we will leave it here as we do not need to find a solution to get the take home message regarding non-constant acceleration.</p>
-<div class="dropdown attention admonition">
-<p class="admonition-title">For the future</p>
-<p>If you feel so inclined you can come back to this equation again once you have learnt a bit about differential equations and see if you can find a solution if you make use of the small angle approximation, i.e. <span class="math notranslate nohighlight">\(\sin\theta \approx \theta.\)</span> It should give a you familiar expression from your pre-University studies.</p>
-</div>
-</div>
+<p>So you may be asking yourself why I have spent some much time stressing that you should be very careful with the suvat equations. And you should be, because they only work under a very specific condition that actually is a rather unusual one in the real world. It is much more common that the systems you will now be dealing with in your degree have a non-constant acceleration. We are going to look at two particular situations, the <span class="xref myst">simple pendulum</span> and <a class="reference internal" href="#sec-c2-air"><span class="std std-ref">free fall in a fluid</span></a>, plus an aside discussion on <a class="reference internal" href="#sec-c2-gravity"><span class="std std-ref">gravity</span></a> that we will not formally derive but is a good mental exercise for you.</p>
 <div class="section" id="free-fall-in-a-fluid">
 <span id="sec-c2-air"></span><h3>Free fall in a fluid<a class="headerlink" href="#free-fall-in-a-fluid" title="Permalink to this headline">#</a></h3>
-<p>In this section we are now going to go against the stereotype of a physicist and actually consider air resistance! Or more generally we are going to consider the case of a body moving through a fluid which includes both liquids and gases but can be extended to roughly approximate motion through more exotic states of matter such as polymer melts. We are only going to think about a body in free fall as this simple geometry still presents a difficult setup to derive a form of a kinematic equation, namely the velocity of the body. You can extend the principles here to two or three dimensional motion, such as including air resistance in the projectile motion we have already covered in <a class="reference internal" href="Lecture1.html#lecture1"><span class="std std-ref">Lecture 1</span></a> but it quickly gets <strong>very</strong> hard to solve and is not necessary for this course.</p>
+<p>In this section we are now going to go against the stereotype of a physicist and actually consider air resistance! Or more generally we are going to consider the case of a body moving through a fluid which includes both liquids and gases but can be extended to roughly approximate motion through more exotic states of matter such as polymer melts.<br />
+We are only going to think about a body in free fall as this simple geometry still presents a difficult setup to derive a form of a kinematic equation, namely the velocity of the body. You can extend the principles here to two or three dimensional motion, such as including air resistance in the projectile motion we have already covered in <a class="reference internal" href="Lecture1.html#lecture1"><span class="std std-ref">Lecture 1</span></a> but it quickly gets <strong>very</strong> hard to solve and is not necessary for this course.</p>
 <p>So let us jump into the problem with our usual first step of defining the system, and of course we must include our labelled schematic diagram.</p>
 <div class="figure align-center" id="fig-c2-drag">
 <a class="reference internal image-reference" href="_images/C2_drag.png"><img alt="An object of mass $m$ in free fall through some fluid. The velocity of the object $v(t)$ points downwards in the direction of gravity and there is a resistive force due to the interaction between the fluid and the moving body $R(v)$. For this course we assume that $R(v)$ is proportional to $v(t)$." src="_images/C2_drag.png" style="width: 30%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">An object of mass <span class="math notranslate nohighlight">\(m\)</span> in free fall through some fluid. The velocity of the object <span class="math notranslate nohighlight">\(v(t)\)</span> points downwards in the direction of gravity and there is a resistive force due to the interaction between the fluid and the moving body <span class="math notranslate nohighlight">\(R(v)\)</span>. For this course we assume that <span class="math notranslate nohighlight">\(R(v)\)</span> is proportional to <span class="math notranslate nohighlight">\(v(t)\)</span>.</span><a class="headerlink" href="#fig-c2-drag" title="Permalink to this image">#</a></p>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">An object of mass <span class="math notranslate nohighlight">\(m\)</span> in free fall through some fluid. The velocity of the object <span class="math notranslate nohighlight">\(v(t)\)</span> points downwards in the direction of gravity and there is a resistive force due to the interaction between the fluid and the moving body <span class="math notranslate nohighlight">\(R(v)\)</span>. For this course we assume that <span class="math notranslate nohighlight">\(R(v)\)</span> is proportional to <span class="math notranslate nohighlight">\(v(t)\)</span>.</span><a class="headerlink" href="#fig-c2-drag" title="Permalink to this image">#</a></p>
 </div>
-<p>You may be questioning why I have taken the time to draw out <a class="reference internal" href="#fig-c2-drag"><span class="std std-numref">Fig. 6</span></a> as it is a rather simple one at face value. I agree but it also allows us to pin down some definitions that will help us from making mistakes down the line. I’d like to draw your attention to the fact that the force acting downwards due to gravity is constant, whereas the resistive force <span class="math notranslate nohighlight">\(R\)</span> is a function of velocity. For nearly every system describing motion through a fluid this will be a positive relation meaning that increasing the velocity will increase the resistive force, but it is the exact relationship between resistive force and velocity that makes this a more challenging problem.</p>
+<p>You may be questioning why I have taken the time to draw out <a class="reference internal" href="#fig-c2-drag"><span class="std std-numref">Fig. 5</span></a> as it is a rather simple one at face value. I agree but it also allows us to pin down some definitions that will help us from making mistakes down the line. I’d like to draw your attention to the fact that the force acting downwards due to gravity is constant, whereas the resistive force <span class="math notranslate nohighlight">\(R\)</span> is a function of velocity. For nearly every system describing motion through a fluid this will be a positive relation meaning that increasing the velocity will increase the resistive force, but it is the exact relationship between resistive force and velocity that makes this a more challenging problem.</p>
 <p>For the purposes of this example we are going to make the assumption that the resistive force varies linearly with velocity meaning we can state that</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -513,7 +475,7 @@ R(v) &amp;= bv
 </div>
 <p>Again I am jumping ahead a little bit but we can make use of the form of Newton’s Second Law that you have already seen (<span class="math notranslate nohighlight">\(F=ma\)</span>) to make a statement about the net force (and therefore net acceleration) in terms of the two component forces involved. This gives</p>
 <div class="math notranslate nohighlight" id="equation-eq-c2-drag-start">
-<span class="eqno">(19)<a class="headerlink" href="#equation-eq-c2-drag-start" title="Permalink to this equation">#</a></span>\[\begin{split}mg-bv&amp;=m\frac{dv}{dt}\\
+<span class="eqno">(17)<a class="headerlink" href="#equation-eq-c2-drag-start" title="Permalink to this equation">#</a></span>\[\begin{split}mg-bv&amp;=m\frac{dv}{dt}\\
 \frac{dv}{dt}&amp;=g-\left(\frac{b}{m}\right)v\\
 	&amp;=g-kv\end{split}\]</div>
 <p>You will see that I have used the substitution <span class="math notranslate nohighlight">\(k=\frac{b}{m}\)</span>. It is entirely acceptable to combine multiple constants into a single constant as I have done here. Sometimes this can give some new insight into the physical meaning of the system but, more often than not, it is simply because we want to save time by only writing one letter instead of many. This efficient (read: lazy) approach is the one I have taken.</p>
@@ -533,7 +495,7 @@ R(v) &amp;= bv
 \frac{1}{k}\ln\left(\frac{g-kv}{g}\right)&amp;=-t+c\\
 1-\frac{kv}{g}&amp;=e^{-k(t+c)}
 \end{align*}\]</div>
-<p>We can define this constant of integration <span class="math notranslate nohighlight">\(c\)</span> by considering the initial conditions of our system. As is our usual approach we can work from the assumption that the initial velocity is zero. By substiuting in <span class="math notranslate nohighlight">\(v=0\)</span> and <span class="math notranslate nohighlight">\(t=0\)</span> we find <span class="math notranslate nohighlight">\(1 = e^{-kc}\)</span> which is only true when <span class="math notranslate nohighlight">\(c=0\)</span> (assumining $k\neq 0%). Thus</p>
+<p>We can define this constant of integration <span class="math notranslate nohighlight">\(c\)</span> by considering the initial conditions of our system. As is our usual approach we can work from the assumption that the initial velocity is zero. By substituting in <span class="math notranslate nohighlight">\(v=0\)</span> and <span class="math notranslate nohighlight">\(t=0\)</span> we find <span class="math notranslate nohighlight">\(1 = e^{-kc}\)</span> which is only true when <span class="math notranslate nohighlight">\(c=0\)</span> (assuming <span class="math notranslate nohighlight">\(k\neq 0\)</span>). Thus</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{kv}{g}&amp;=1-e^{-kt}\\
@@ -600,7 +562,7 @@ Question</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-1">
 Hint</label><div class="sd-tab-content docutils">
-<p>Start with a modification to equation <a class="reference internal" href="#equation-eq-c2-drag-start">(19)</a> that changes it from a <span class="math notranslate nohighlight">\(v\)</span> to a <span class="math notranslate nohighlight">\(v^2\)</span> dependence.
+<p>Start with a modification to equation <a class="reference internal" href="#equation-eq-c2-drag-start">(17)</a> that changes it from a <span class="math notranslate nohighlight">\(v\)</span> to a <span class="math notranslate nohighlight">\(v^2\)</span> dependence.
 You’ll also need the standard integral:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -805,7 +767,6 @@ Solution</label><div class="sd-tab-content docutils">
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-constant-acceleration">Non-constant acceleration</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-pendulum">Simple pendulum</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#free-fall-in-a-fluid">Free fall in a fluid</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravity">Gravity.</a></li>
 </ul>

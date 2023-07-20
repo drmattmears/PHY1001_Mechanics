@@ -399,7 +399,7 @@ document.write(`
 <h2>A note about kinematic equations and notation.<a class="headerlink" href="#a-note-about-kinematic-equations-and-notation" title="Permalink to this headline">#</a></h2>
 <p>Be sure you check out the <a class="reference internal" href="PreCourse.html#precourse"><span class="std std-ref">Pre-Course page</span></a> that shows the maths and physics skills and knowledge expected at the start of this course.</p>
 <p>In your pre-university education you will have met the kinematic equations before but most probably under another name: the suvat equations. I am not going to use the suvat notation because it is rather limiting, and instead I will introduce you to a more typical notation convention that will apply to many other fields in physics.</p>
-<p>You will see more of why I am avoiding the suvat terminology and approach in Lecture 2. Something for you to look forward to.</p>
+<p>You will see more of why I am avoiding the suvat terminology and approach in <a class="reference internal" href="Lecture2.html#lecture2"><span class="std std-ref">Lecture 2</span></a>. Something for you to look forward to.</p>
 <div class="section" id="the-new-suvat">
 <h3>The new suvat<a class="headerlink" href="#the-new-suvat" title="Permalink to this headline">#</a></h3>
 <p>I present to you the kinematic equations in <a class="reference internal" href="#tab-kineq"><span class="std std-numref">Table 1</span></a> below. Take a few moments to look at them and compare to the suvat forms you most likely have ingrained in your memory by your teachers.</p>
@@ -421,14 +421,15 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>The form of the equations should be familiar but some of the notation may be different. By using the notation of <span class="math notranslate nohighlight">\(v(t)\)</span> and <span class="math notranslate nohighlight">\(x(t)\)</span> for velocity and position at time <span class="math notranslate nohighlight">\(t\)</span> respectively we are recognising that these are functions and therefore can be used to calculate the velocity and/or position at any time so long as we have an initial condition. These conditions are <span class="math notranslate nohighlight">\(v_0\)</span> and <span class="math notranslate nohighlight">\(x_0\)</span> for initial velocity and position respectively - as we will see in Lecture 2 the initial conditions terminology relates to how we solve differential equations, but you will see more of these later and in your maths courses.</p>
+<p>The form of the equations should be familiar but some of the notation may be different. By using the notation of <span class="math notranslate nohighlight">\(v(t)\)</span> and <span class="math notranslate nohighlight">\(x(t)\)</span> for velocity and position at time <span class="math notranslate nohighlight">\(t\)</span> respectively we are recognising that these are functions and therefore can be used to calculate the velocity and/or position at any time so long as we have an initial condition. These conditions are <span class="math notranslate nohighlight">\(v_0\)</span> and <span class="math notranslate nohighlight">\(x_0\)</span> for initial velocity and position respectively - as we will see in <a class="reference internal" href="Lecture2.html#lecture2"><span class="std std-ref">Lecture 2</span></a> the initial conditions terminology relates to how we solve differential equations, but you will see more of these later and in your maths courses.</p>
 </div>
 </div>
 <div class="section" id="parabolic-path">
 <h2>Parabolic Path<a class="headerlink" href="#parabolic-path" title="Permalink to this headline">#</a></h2>
 <p>You may have already learned about projectile motion in your pre-university studies but typically the approach taken is to consider only the “special points” of the projectile, namely the <strong>maximum height</strong>, <strong>range</strong> and <strong>time of flight</strong>. You may have also looked at these parameters again in the situation where the landing height is different to the firing height.</p>
 <p>Instead of taking this approach we are going to consider the <strong>entire</strong> path of the projectile. In doing this we can easily determine the expressions for the special points you have already seen but also any other point on the path. We’ll go through an example under <a class="reference internal" href="#ex-c1-coconut"><span class="std std-ref">Example: Coconut shy cannon</span></a> below which should demonstrate why modelling the entire projectile path is more versatile.
-Also by modelling the projectile path we can also calculate the range when fired up a slope, or a curved hill, or whetever type of ramp shape you can model with a function. Exciting, no? You’ll have to contain your enthusiam until section \ref{C1_slope} for that.</p>
+Also by modelling the projectile path we can also calculate the range when fired up a slope, or a curved hill, or whetever type of ramp shape you can model with a function.<br />
+Exciting, no? You’ll have to contain your enthusiam until <a class="reference internal" href="#c1-slope"><span class="std std-ref">later</span></a> for that.</p>
 <div class="figure align-center" id="parabola">
 <a class="reference internal image-reference" href="_images/Parabola.png"><img alt="A simple projectile with the same firing and landing height. The velocity vectors at the points on the path indicated are resolved into their horizontal and vertical components." src="_images/Parabola.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">A simple projectile with the same firing and landing height. The velocity vectors at the points on the path indicated are resolved into their horizontal and vertical components. Note that the only acceleration is due to gravity - air resistance is neglected.</span><a class="headerlink" href="#parabola" title="Permalink to this image">#</a></p>
@@ -443,8 +444,8 @@ Also by modelling the projectile path we can also calculate the range when fired
 <p>In <a class="reference internal" href="#parabola"><span class="std std-numref">Fig. 1</span></a> above we can see a simple projectile path for a particle fired at some angle <span class="math notranslate nohighlight">\(\theta\)</span> with some initial velocity <span class="math notranslate nohighlight">\(v_0\)</span>. It is worth noting that the textbook this image comes from (Young and Freedman) uses <span class="math notranslate nohighlight">\(\alpha_0\)</span> for initial firing angle with respect to the horizontal and <span class="math notranslate nohighlight">\(\alpha\)</span> for angles to the horizontal at any other point along the path. I find this a bit unusual and will stick to using <span class="math notranslate nohighlight">\(\theta\)</span> for the angles, and generally I’m just interested in <span class="math notranslate nohighlight">\(\theta_0\)</span>.
 Even though the figure shows the velocities (total, <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> components) at different positions, all we need to know is <span class="math notranslate nohighlight">\(v_0\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> in order to create a model that describes the entire projectile path.</p>
 <p>We can use the horizontal component of the firing velocity <span class="math notranslate nohighlight">\(v_{0,x}\)</span> and initial vertical component <span class="math notranslate nohighlight">\(v_{0,y}\)</span> along with some basic trigonometry to find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-af5e2fa7-0d92-4871-af71-34c390a784ac">
-<span class="eqno">(2)<a class="headerlink" href="#equation-af5e2fa7-0d92-4871-af71-34c390a784ac" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-dfce439b-2f0b-4266-966c-58023182d49c">
+<span class="eqno">(2)<a class="headerlink" href="#equation-dfce439b-2f0b-4266-966c-58023182d49c" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \cos\theta=\frac{v_{0,x}}{v_{0}}\quad \mathrm{and}\quad \sin\theta=\frac{v_{0,y}}{v_{0}}
 \end{equation}\]</div>
 <p>and a little rearrangement gives</p>
@@ -465,9 +466,9 @@ Even though the figure shows the velocities (total, <span class="math notranslat
 <p><strong>Vertical</strong>: Gravity is the only cause of acceleration and it acts in a downwards direction, and so <span class="math notranslate nohighlight">\(a_{y}=-g\)</span> (initially rising object). From equation <a class="reference internal" href="#equation-eq1-2">(3)</a> we find</p>
 <div class="math notranslate nohighlight" id="equation-eq-part-1-y-t">
 <span class="eqno">(5)<a class="headerlink" href="#equation-eq-part-1-y-t" title="Permalink to this equation">#</a></span>\[y=v_{0,y}t-\frac{1}{2}gt^{2}=\left(v_{0}\sin\theta\right)t-\frac{1}{2}gt^{2}\]</div>
-<p>We now have two equations that define the \textbf{position vector} of the particle <span class="math notranslate nohighlight">\(\textbf{r}(t)\)</span> at any time <span class="math notranslate nohighlight">\(t\)</span>, i.e.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-828e02bf-7086-4578-8372-d0163509ae25">
-<span class="eqno">(6)<a class="headerlink" href="#equation-828e02bf-7086-4578-8372-d0163509ae25" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<p>We now have two equations that define the <strong>position vector</strong> of the particle <span class="math notranslate nohighlight">\(\textbf{r}(t)\)</span> at any time <span class="math notranslate nohighlight">\(t\)</span>, i.e.</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c8fa81ff-3531-4dab-a8fb-d560d674f3e7">
+<span class="eqno">(6)<a class="headerlink" href="#equation-c8fa81ff-3531-4dab-a8fb-d560d674f3e7" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \textbf{r}(t)=\left(\begin{array}{c}
 \left(v_{0}\cos\theta\right)t\\
 \\
@@ -535,14 +536,14 @@ Even though the figure shows the velocities (total, <span class="math notranslat
 <div class="section" id="maximum-height-h-text-max">
 <h3>Maximum height, <span class="math notranslate nohighlight">\(h_\text{max}\)</span><a class="headerlink" href="#maximum-height-h-text-max" title="Permalink to this headline">#</a></h3>
 <p>From <a class="reference internal" href="#parabola"><span class="std std-numref">Fig. 1</span></a> it should be clear that the point of maximum height is the stationary point of the parabolic curve. Whenever you hear the phrase “stationary point” you should always think <strong>calculus</strong> which in this circumstance means remembering that a stationary point has a gradient or <strong>first derivative</strong> equal to zero. Working it through from equation <a class="reference internal" href="#equation-eq-overall-parabolic-equation">(7)</a> we find,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-12a0deab-b7cb-4200-904c-5e62d7a4e11e">
-<span class="eqno">(10)<a class="headerlink" href="#equation-12a0deab-b7cb-4200-904c-5e62d7a4e11e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-100f656d-7a79-4d1e-b234-aa588dfdbc4e">
+<span class="eqno">(10)<a class="headerlink" href="#equation-100f656d-7a79-4d1e-b234-aa588dfdbc4e" title="Permalink to this equation">#</a></span>\[\begin{align}
 	\dfrac{\mathrm{d}y}{\mathrm{d}x} &amp;= \tan\theta - \dfrac{gx}{v_{0}^{2}\cos^{2}\theta} = 0\nonumber \\
 		 \dfrac{gx}{v_{0}^{2}\cos^{2}\theta} &amp;=\tan\theta \nonumber\\
 		x &amp;=\dfrac{v_{0}^{2}\cos^{2}\theta}{g}\dfrac{\sin\theta}{\cos\theta} \nonumber\\
 		&amp;= \dfrac{v_{0}^{2}\sin\theta\cos\theta}{g}
 \end{align}\]</div>
-<p>This gives the <span class="math notranslate nohighlight">\(x\)</span> coordinate of maximum height, and to find the <span class="math notranslate nohighlight">\(y\)</span> coordinate we simply substitute this expression for <span class="math notranslate nohighlight">\(x\)</span> back into equation \ref{eq:Overall parabolic equation}.</p>
+<p>This gives the <span class="math notranslate nohighlight">\(x\)</span> coordinate of maximum height, and to find the <span class="math notranslate nohighlight">\(y\)</span> coordinate we simply substitute this expression for <span class="math notranslate nohighlight">\(x\)</span> back into equation <a class="reference internal" href="#equation-eq-overall-parabolic-equation">(7)</a>.</p>
 <div class="math notranslate nohighlight" id="equation-eq-hmax">
 <span class="eqno">(11)<a class="headerlink" href="#equation-eq-hmax" title="Permalink to this equation">#</a></span>\[\begin{split}	y = h_{\text{max}} &amp;= \dfrac{v_{0}^{2}\sin\theta\cos\theta}{g}\tan\theta - \dfrac{g}{2v_{0}^{2}\cos^2\theta}\dfrac{v_{0}^{4}\sin^2\theta\cos^2\theta}{g^2}\nonumber\\
 	&amp;= \dfrac{v_{0}^{2}\sin^2\theta}{g} - \dfrac{v_{0}^{2}\sin^2\theta}{2g}\nonumber\\
@@ -554,7 +555,8 @@ Even though the figure shows the velocities (total, <span class="math notranslat
 \[\begin{align*}
 0 \leq h \leq h_{\text{max}}
 \end{align*}\]</div>
-<p>or in other words, the model is only valid if the height of the coconut is between ground level and the maximum height of the projectile. Otherwise the projectile will never hit the coconut anywhere along its path which makes sense in the real world. Neat, huh?</p>
+<p>or in other words, the model is only valid if the height of the coconut is between ground level and the maximum height of the projectile. Otherwise the projectile will never hit the coconut anywhere along its path which makes sense in the real world.<br />
+Neat, huh?</p>
 </div>
 </div>
 <div class="section" id="projectile-range-r">
@@ -587,9 +589,9 @@ Does the algebra agree with your real world expectations?</p></li>
 \[\begin{align*}
 x(t)=v_{x,0}t=v_{0}\cos\theta \,t
 \end{align*}\]</div>
-<p>and the <span class="math notranslate nohighlight">\(x\)</span> coordinate for the \textbf{total} flight is the range of the projectile. So combining this with equation <a class="reference internal" href="#equation-eq-r">(12)</a> gives</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3efdc083-1ae3-4344-a742-812a3cc80784">
-<span class="eqno">(13)<a class="headerlink" href="#equation-3efdc083-1ae3-4344-a742-812a3cc80784" title="Permalink to this equation">#</a></span>\[\begin{align}
+<p>and the <span class="math notranslate nohighlight">\(x\)</span> coordinate for the <strong>total</strong> flight is the range of the projectile. So combining this with equation <a class="reference internal" href="#equation-eq-r">(12)</a> gives</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9bb1410b-8e83-46dd-80fa-0f71ae8ddfa2">
+<span class="eqno">(13)<a class="headerlink" href="#equation-9bb1410b-8e83-46dd-80fa-0f71ae8ddfa2" title="Permalink to this equation">#</a></span>\[\begin{align}
 	x(t_f) = R &amp;= v_{0}\cos\theta \,t_f\nonumber\\
 	\dfrac{2v_{0}^{2}\cos\theta\sin\theta}{g} &amp;= v_{0}\cos\theta \,t_f\nonumber\\
 	\dfrac{2v_{0}\sin\theta}{g} &amp;= t_f
@@ -660,7 +662,7 @@ Thus</p>
 <span class="eqno">(14)<a class="headerlink" href="#equation-eq-slope-x" title="Permalink to this equation">#</a></span>\[\begin{split}\dfrac{gx'}{2v_0^2\cos^2\theta} &amp;= \tan\theta - \tan\alpha\nonumber\\
 x' &amp;= \dfrac{2v_0^2}{g}\left(\cos^2\theta\tan\theta - \cos^2\theta\tan\alpha\right)\nonumber\\
 &amp;= \dfrac{2v_0^2}{g}\left(\sin\theta\cos\theta - \cos^2\theta\tan\alpha\right)\end{split}\]</div>
-<p>It is worth reiterating that this expression is for the \textbf{horizontal coordinate of the landing point} and not the length down the ramp. However this length <span class="math notranslate nohighlight">\(L\)</span> can easily be found from trigonometry</p>
+<p>It is worth reiterating that this expression is for the <strong>horizontal coordinate of the landing point</strong> and not the length down the ramp. However this length <span class="math notranslate nohighlight">\(L\)</span> can easily be found from trigonometry</p>
 <div class="math notranslate nohighlight" id="equation-eq-slope-l">
 <span class="eqno">(15)<a class="headerlink" href="#equation-eq-slope-l" title="Permalink to this equation">#</a></span>\[\begin{split}L &amp;= \dfrac{x'}{\cos\alpha}\nonumber\\
 &amp;= \dfrac{2v_0^2}{g\cos\alpha}\left(\sin\theta\cos\theta - \cos^2\theta\dfrac{\sin\alpha}{\cos\alpha}\right)\nonumber\\
