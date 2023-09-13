@@ -14,7 +14,7 @@ I'm Dr Matt Mears (he/him or they/them), and I'm a Senior University Teacher in 
 You get the delight(!) of me teaching you the Mechanics course in your very first semester, and then you'll probably see me again in second year as I currently run the labs.
 
 Office: D29, Hicks Building  
-Office Hours: TBC  
+Office Hours: Mondays, 13:00-14:30. You can book a 30 min appointment via <https://tinyurl.com/mattmears> 
 Email: <m.mears@sheffield.ac.uk>
 
 ### Structure of this course
