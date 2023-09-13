@@ -25,6 +25,8 @@ I have produced these notes to be used in parallel with the lecture slides and w
 It's also important to read around the subject, particularly those topics that may not be clear immediately from the notes or lectures. Different books explain concepts in different ways so another author may spark that lightbulb moment. Textbooks are also a great resource for getting more practice questions to consolidate your understanding.
 
 The list of 11 lectures are below. There will also be a revision lecture early in the exam period, date of which will be confirmed once we know the exam timetable.
+
+### Contents of course
 ```{tableofcontents}
 ```
 
