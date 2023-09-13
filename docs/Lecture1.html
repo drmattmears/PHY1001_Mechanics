@@ -444,8 +444,8 @@ Exciting, no? You’ll have to contain your enthusiam until <a class="reference 
 <p>In <a class="reference internal" href="#parabola"><span class="std std-numref">Fig. 1</span></a> above we can see a simple projectile path for a particle fired at some angle <span class="math notranslate nohighlight">\(\theta\)</span> with some initial velocity <span class="math notranslate nohighlight">\(v_0\)</span>. It is worth noting that the textbook this image comes from (Young and Freedman) uses <span class="math notranslate nohighlight">\(\alpha_0\)</span> for initial firing angle with respect to the horizontal and <span class="math notranslate nohighlight">\(\alpha\)</span> for angles to the horizontal at any other point along the path. I find this a bit unusual and will stick to using <span class="math notranslate nohighlight">\(\theta\)</span> for the angles, and generally I’m just interested in <span class="math notranslate nohighlight">\(\theta_0\)</span>.
 Even though the figure shows the velocities (total, <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> components) at different positions, all we need to know is <span class="math notranslate nohighlight">\(v_0\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> in order to create a model that describes the entire projectile path.</p>
 <p>We can use the horizontal component of the firing velocity <span class="math notranslate nohighlight">\(v_{0,x}\)</span> and initial vertical component <span class="math notranslate nohighlight">\(v_{0,y}\)</span> along with some basic trigonometry to find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dfce439b-2f0b-4266-966c-58023182d49c">
-<span class="eqno">(2)<a class="headerlink" href="#equation-dfce439b-2f0b-4266-966c-58023182d49c" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-dbc3eb97-81f3-4712-96e3-c116cbd0ec6b">
+<span class="eqno">(2)<a class="headerlink" href="#equation-dbc3eb97-81f3-4712-96e3-c116cbd0ec6b" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \cos\theta=\frac{v_{0,x}}{v_{0}}\quad \mathrm{and}\quad \sin\theta=\frac{v_{0,y}}{v_{0}}
 \end{equation}\]</div>
 <p>and a little rearrangement gives</p>
@@ -467,8 +467,8 @@ Even though the figure shows the velocities (total, <span class="math notranslat
 <div class="math notranslate nohighlight" id="equation-eq-part-1-y-t">
 <span class="eqno">(5)<a class="headerlink" href="#equation-eq-part-1-y-t" title="Permalink to this equation">#</a></span>\[y=v_{0,y}t-\frac{1}{2}gt^{2}=\left(v_{0}\sin\theta\right)t-\frac{1}{2}gt^{2}\]</div>
 <p>We now have two equations that define the <strong>position vector</strong> of the particle <span class="math notranslate nohighlight">\(\textbf{r}(t)\)</span> at any time <span class="math notranslate nohighlight">\(t\)</span>, i.e.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c8fa81ff-3531-4dab-a8fb-d560d674f3e7">
-<span class="eqno">(6)<a class="headerlink" href="#equation-c8fa81ff-3531-4dab-a8fb-d560d674f3e7" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-512f1cef-f74d-41ec-9dc9-c82e35e65929">
+<span class="eqno">(6)<a class="headerlink" href="#equation-512f1cef-f74d-41ec-9dc9-c82e35e65929" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \textbf{r}(t)=\left(\begin{array}{c}
 \left(v_{0}\cos\theta\right)t\\
 \\
@@ -536,8 +536,8 @@ Even though the figure shows the velocities (total, <span class="math notranslat
 <div class="section" id="maximum-height-h-text-max">
 <h3>Maximum height, <span class="math notranslate nohighlight">\(h_\text{max}\)</span><a class="headerlink" href="#maximum-height-h-text-max" title="Permalink to this headline">#</a></h3>
 <p>From <a class="reference internal" href="#parabola"><span class="std std-numref">Fig. 1</span></a> it should be clear that the point of maximum height is the stationary point of the parabolic curve. Whenever you hear the phrase “stationary point” you should always think <strong>calculus</strong> which in this circumstance means remembering that a stationary point has a gradient or <strong>first derivative</strong> equal to zero. Working it through from equation <a class="reference internal" href="#equation-eq-overall-parabolic-equation">(7)</a> we find,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-100f656d-7a79-4d1e-b234-aa588dfdbc4e">
-<span class="eqno">(10)<a class="headerlink" href="#equation-100f656d-7a79-4d1e-b234-aa588dfdbc4e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bbde7400-92e9-4fae-88b9-72bdf3e53284">
+<span class="eqno">(10)<a class="headerlink" href="#equation-bbde7400-92e9-4fae-88b9-72bdf3e53284" title="Permalink to this equation">#</a></span>\[\begin{align}
 	\dfrac{\mathrm{d}y}{\mathrm{d}x} &amp;= \tan\theta - \dfrac{gx}{v_{0}^{2}\cos^{2}\theta} = 0\nonumber \\
 		 \dfrac{gx}{v_{0}^{2}\cos^{2}\theta} &amp;=\tan\theta \nonumber\\
 		x &amp;=\dfrac{v_{0}^{2}\cos^{2}\theta}{g}\dfrac{\sin\theta}{\cos\theta} \nonumber\\
@@ -590,8 +590,8 @@ Does the algebra agree with your real world expectations?</p></li>
 x(t)=v_{x,0}t=v_{0}\cos\theta \,t
 \end{align*}\]</div>
 <p>and the <span class="math notranslate nohighlight">\(x\)</span> coordinate for the <strong>total</strong> flight is the range of the projectile. So combining this with equation <a class="reference internal" href="#equation-eq-r">(12)</a> gives</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9bb1410b-8e83-46dd-80fa-0f71ae8ddfa2">
-<span class="eqno">(13)<a class="headerlink" href="#equation-9bb1410b-8e83-46dd-80fa-0f71ae8ddfa2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7432534a-afd1-484f-8ec9-0d381a973c9e">
+<span class="eqno">(13)<a class="headerlink" href="#equation-7432534a-afd1-484f-8ec9-0d381a973c9e" title="Permalink to this equation">#</a></span>\[\begin{align}
 	x(t_f) = R &amp;= v_{0}\cos\theta \,t_f\nonumber\\
 	\dfrac{2v_{0}^{2}\cos\theta\sin\theta}{g} &amp;= v_{0}\cos\theta \,t_f\nonumber\\
 	\dfrac{2v_{0}\sin\theta}{g} &amp;= t_f

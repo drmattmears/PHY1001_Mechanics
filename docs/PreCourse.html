@@ -370,7 +370,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trigonometric-formulae">Trigonometric formulae</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differentiation">Differentiation</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-notation">‘Prime’ notation</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#dot-notation">‘Dot’ notation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">Integration</a><ul class="nav section-nav flex-column">
@@ -543,8 +547,8 @@ Product formulae: special cases<div class="sd-summary-down docutils">
 <div class="section" id="definition">
 <h4>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h4>
 <p>You’ll cover lots of different methods and tricks for differentiating functions during your studies but just as a reminder</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0b50bd96-2b86-4a37-8f3a-3816dc6bd080">
-<span class="eqno">(1)<a class="headerlink" href="#equation-0b50bd96-2b86-4a37-8f3a-3816dc6bd080" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2a4d3c2b-0e22-4ea6-b6b5-1bd6c203812b">
+<span class="eqno">(1)<a class="headerlink" href="#equation-2a4d3c2b-0e22-4ea6-b6b5-1bd6c203812b" title="Permalink to this equation">#</a></span>\[\begin{align}
 f(x) &amp;= x^n \\ \therefore \frac{\mathrm{d}f(x)}{\mathrm{d}x} &amp;= nx^{n-1}
 \end{align}\]</div>
 <p>Some common derivatives that may be used in this course are included in the dropdown box below for quick reference.</p>
@@ -655,12 +659,28 @@ Basic differentiation rules<div class="sd-summary-down docutils">
 </details></div>
 <div class="section" id="notation">
 <h4>Notation<a class="headerlink" href="#notation" title="Permalink to this headline">#</a></h4>
-<p>In addition to the standard notation when differentiating the function <span class="math notranslate nohighlight">\(y(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> there is another notation style that will be used in this course and indeed throughout your degree, often known as the “prime” notation because we use the symbol <span class="math notranslate nohighlight">\('\)</span> otherwise known as prime.</p>
-<p>So the expression <span class="math notranslate nohighlight">\(f'(x)\)</span> is read as “<span class="math notranslate nohighlight">\(f\)</span> prime of <span class="math notranslate nohighlight">\(x\)</span>” and is the first derivative of <span class="math notranslate nohighlight">\(f(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span>. Similarly <span class="math notranslate nohighlight">\(f''(x)\)</span> is “<span class="math notranslate nohighlight">\(f\)</span> double prime of <span class="math notranslate nohighlight">\(x\)</span>” and means the second derivative of <span class="math notranslate nohighlight">\(f(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span>.</p>
-<p>It’s worth noting a typical shorthand convention in physics when using terms such as “<span class="math notranslate nohighlight">\(x\)</span>” for position, “<span class="math notranslate nohighlight">\(v\)</span>” for velocity, etc. When using the prime notation here we typically mean the derivative <strong>with respect to time</strong>. In other words</p>
+<div class="section" id="prime-notation">
+<h5>‘Prime’ notation<a class="headerlink" href="#prime-notation" title="Permalink to this headline">#</a></h5>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Here we are assuming that <span class="math notranslate nohighlight">\(y\)</span> is a function of <span class="math notranslate nohighlight">\(x\)</span> only, and no other variables (no dependence on time <span class="math notranslate nohighlight">\(t\)</span> or anything else). When dealing with functions that have multiple input variables the prime notation isn’t great.</p>
+</div>
+</div>
+<p>In addition to the standard notation when differentiating the function <span class="math notranslate nohighlight">\(y(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> there is another notation style that will be used in this course and indeed throughout your degree, often known as the “prime” notation<a class="footnote-reference brackets" href="#pre-prime" id="id1">1</a> because we use the symbol <span class="math notranslate nohighlight">\('\)</span> otherwise known as prime.</p>
+<p>So the expression <span class="math notranslate nohighlight">\(y'(x)\)</span> is read as “<span class="math notranslate nohighlight">\(y\)</span> prime of <span class="math notranslate nohighlight">\(x\)</span>” and is the first derivative of <span class="math notranslate nohighlight">\(y(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span>. Similarly <span class="math notranslate nohighlight">\(y''(x)\)</span> is “<span class="math notranslate nohighlight">\(y\)</span> double prime of <span class="math notranslate nohighlight">\(x\)</span>” and means the second derivative of <span class="math notranslate nohighlight">\(f(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span>.</p>
+</div>
+<div class="section" id="dot-notation">
+<h5>‘Dot’ notation<a class="headerlink" href="#dot-notation" title="Permalink to this headline">#</a></h5>
+<p>It’s worth noting a typical shorthand convention in physics when dealing with terms that have a time dependence such as velocity (rate of change of position). As differentiating things with respect to time is so common in physics and astronomy we often use a different type of notation whereby we put a dot above the symbol. In other words</p>
 <div class="amsmath math notranslate nohighlight">
-\[\begin{align*}x' &amp;= \frac{\mathrm{d}x}{\mathrm{d}t}=v \\
-\text{and} \qquad v' &amp;= \frac{\mathrm{d}v}{\mathrm{d}t} = a = x''\end{align*}\]</div>
+\[\begin{align*}
+\dot{x} &amp;= \frac{\mathrm{d}x}{\mathrm{d}t}=v \\
+\text{and} \qquad \dot{v}' = \frac{\mathrm{d}v}{\mathrm{d}t} = a = \ddot{x}
+\end{align*}\]</div>
+<p>Unsuprisingly this is often called the dot notation of differentiation.<a class="footnote-reference brackets" href="#pre-dot" id="id2">2</a></p>
+</div>
 </div>
 </div>
 <div class="section" id="integration">
@@ -721,15 +741,26 @@ Common integrals<div class="sd-summary-down docutils">
 <div class="section" id="vectors">
 <h3>Vectors<a class="headerlink" href="#vectors" title="Permalink to this headline">#</a></h3>
 <p>You will be taught vectors in great detail within PHY129 because they’re incredibly important for physics. Here though I’ll just give a quick reminder about the notation convention.</p>
-<p>When a parameter in an expression is a vector quantity then I will indicated this using bold font. So if we are considering the velocity of something, <span class="math notranslate nohighlight">\(\textbf{v}\)</span> would indicate the velocity vector whereas <span class="math notranslate nohighlight">\(v\)</span> (no bold) would be the scalar quantity (speed). More formally <span class="math notranslate nohighlight">\(v=|\textbf{v}|\)</span>.</p>
+<p>When a parameter in an expression is a vector quantity then I will indicated this using bold font. So if we are considering the velocity of something, <span class="math notranslate nohighlight">\(\textbf{v}\)</span> would indicate the velocity vector whereas <span class="math notranslate nohighlight">\(v\)</span> (no bold) would be the scalar quantity (speed).<br />
+More formally <span class="math notranslate nohighlight">\(v=|\textbf{v}|\)</span> and <span class="math notranslate nohighlight">\(\textbf{v} = v\hat{\textbf{v}}\)</span> where <span class="math notranslate nohighlight">\(\hat{\textbf{v}}\)</span> is a <a class="reference internal" href="#sec-pre-unit"><span class="std std-ref">unit vector</span></a>.</p>
 <div class="section" id="unit-vectors">
-<h4>Unit vectors<a class="headerlink" href="#unit-vectors" title="Permalink to this headline">#</a></h4>
-<p>In the notation definition above I used the symbols <span class="math notranslate nohighlight">\(\hat{\textbf{i}}\)</span>, <span class="math notranslate nohighlight">\(\hat{\textbf{j}}\)</span> and <span class="math notranslate nohighlight">\(\hat{\textbf{k}}\)</span> to define the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> directions respectively. A unit vector is a helpful quantity that allows us to define a direction without changing the magnitude, because a unit vector has a ‘size’ of 1</p>
+<span id="sec-pre-unit"></span><h4>Unit vectors<a class="headerlink" href="#unit-vectors" title="Permalink to this headline">#</a></h4>
+<p>A unit vector is a helpful quantity that allows us to define a direction without changing the magnitude, because a unit vector has a ‘size’ of 1. In the example above the velocity vector <span class="math notranslate nohighlight">\(\textbf{v}\)</span> is defined by the magnitude of the velocity <span class="math notranslate nohighlight">\(v\)</span> and this unit vector <span class="math notranslate nohighlight">\(\hat{\textbf{v}}\)</span>.</p>
+<p>We typically define unit vectors with respect to the coordinate system we are using. So <span class="math notranslate nohighlight">\(\hat{\textbf{i}}\)</span>, <span class="math notranslate nohighlight">\(\hat{\textbf{j}}\)</span> and <span class="math notranslate nohighlight">\(\hat{\textbf{k}}\)</span> are the unit vectors the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> directions respectively.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 |\hat{\textbf{i}}|=|\hat{\textbf{j}}|=|\hat{\textbf{k}}|=1
 \end{align*}\]</div>
-<p>You’ll see in the PHY129 course that these are not the only unit vectors that exist but for this course you only need one other set for when we discuss non-Cartesian coordinate systems. We’ll cover that in detail within Lecture X.</p>
+<p>You’ll see in the PHY129 course that these are not the only unit vectors that exist but for this course you only need one other set for when we discuss non-Cartesian coordinate systems.</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="pre-prime"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><strong>Historical note:</strong> prime is also known as <strong>Lagrange’s</strong> notation, though most people just say prime. For completeness, the more ‘traditional’ fraction form <span class="math notranslate nohighlight">\(\frac{\mathrm{d}y}{\mathrm{d}x}\)</span> is known as <strong>Leibniz’s</strong> notation.</p>
+</dd>
+<dt class="label" id="pre-dot"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p><strong>Historical note:</strong> this type of notation is also known as <strong>Newton’s</strong> notation.</p>
+</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -810,7 +841,11 @@ Common integrals<div class="sd-summary-down docutils">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trigonometric-formulae">Trigonometric formulae</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differentiation">Differentiation</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#prime-notation">‘Prime’ notation</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#dot-notation">‘Dot’ notation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">Integration</a><ul class="nav section-nav flex-column">

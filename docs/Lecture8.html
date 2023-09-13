@@ -411,9 +411,9 @@ document.write(`
 \end{align*}\]</div>
 <p>We can substitute in <span class="math notranslate nohighlight">\(t=0\)</span> to find this constant of integration because <span class="math notranslate nohighlight">\(\omega(t=0)\)</span> is simply the initial angular velocity <span class="math notranslate nohighlight">\(\omega_0\)</span>, so <span class="math notranslate nohighlight">\(c_1 = \omega_0\)</span>. Therefore</p>
 <div class="math notranslate nohighlight" id="equation-eq-c8-rot-eq1">
-<span class="eqno">(48)<a class="headerlink" href="#equation-eq-c8-rot-eq1" title="Permalink to this equation">#</a></span>\[\omega(t) = \alpha_0 t + \omega_o\]</div>
+<span class="eqno">(50)<a class="headerlink" href="#equation-eq-c8-rot-eq1" title="Permalink to this equation">#</a></span>\[\omega(t) = \alpha_0 t + \omega_o\]</div>
 <p>Take a moment to look at this expression. It looks remarkably similar to the constant acceleration kinematic equations for a linear system, in this case the <span class="math notranslate nohighlight">\(v(t) = at + v_0\)</span> equation. Swap linear velocities <span class="math notranslate nohighlight">\(v\)</span> for angular velocities <span class="math notranslate nohighlight">\(\omega\)</span>, and do the same for accelerations <span class="math notranslate nohighlight">\(a\)</span> to <span class="math notranslate nohighlight">\(\alpha\)</span>, and you can easily remember one set if you remember the other set.</p>
-<p>For completeness though we will actually derive the kinematic equation for angular displacement. Starting from equation <a class="reference internal" href="#equation-eq-c8-rot-eq1">(48)</a> and noting that the angular velocity is the rate of change of angle we can show</p>
+<p>For completeness though we will actually derive the kinematic equation for angular displacement. Starting from equation <a class="reference internal" href="#equation-eq-c8-rot-eq1">(50)</a> and noting that the angular velocity is the rate of change of angle we can show</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{\mathrm{d}\theta}{\mathrm{d}t} &amp;= \alpha_0 t + \omega_0\\
@@ -438,10 +438,10 @@ KE_i = \frac{m_iv_i^2}{2} &amp;= \frac{m_ir_i^2\omega^2}{2}
 \end{align*}\]</div>
 <p>where the subscripts <span class="math notranslate nohighlight">\(i\)</span> indicate an individual particle, notation that will become very useful shortly.</p>
 <p>Let us now move on to the extended solid body case. The way we treat this system is by breaking the single solid body down into the sum of individual particles all rotating about a common axis. It then follows that the total kinetic energy of the solid body is equal to the sum of the kinetic energies of these individual particles.</p>
-<p>In <a class="reference internal" href="#fig-c8-energy"><span class="std std-numref">Fig. 21</span></a> I have picked out two specific particles, labelled with subscripts 1 and 2, to highlight the differences. Particle 1 of mass <span class="math notranslate nohighlight">\(m_1\)</span> follows a circular path of radius <span class="math notranslate nohighlight">\(r_1\)</span> and has tangential velocity <span class="math notranslate nohighlight">\(v_1\)</span> whereas particle two has different mass <span class="math notranslate nohighlight">\(m_2\)</span>, radius <span class="math notranslate nohighlight">\(r_2\)</span> and tangential velocity <span class="math notranslate nohighlight">\(v_2\)</span>. What they <strong>do</strong> have in common is the angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> - the angular velocity must be the same for all particles that make up the solid body if the body were to remain in the same shape and not skew or distort. You’ll also note that I have not made the assumption here that the masses of each particle are the same. This allows me to be more general in the subsequent treatments for bodies that have non-uniform densities, although in practice we will usually stick to the uniform case when solving problems in this course.</p>
+<p>In <a class="reference internal" href="#fig-c8-energy"><span class="std std-numref">Fig. 22</span></a> I have picked out two specific particles, labelled with subscripts 1 and 2, to highlight the differences. Particle 1 of mass <span class="math notranslate nohighlight">\(m_1\)</span> follows a circular path of radius <span class="math notranslate nohighlight">\(r_1\)</span> and has tangential velocity <span class="math notranslate nohighlight">\(v_1\)</span> whereas particle two has different mass <span class="math notranslate nohighlight">\(m_2\)</span>, radius <span class="math notranslate nohighlight">\(r_2\)</span> and tangential velocity <span class="math notranslate nohighlight">\(v_2\)</span>. What they <strong>do</strong> have in common is the angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> - the angular velocity must be the same for all particles that make up the solid body if the body were to remain in the same shape and not skew or distort. You’ll also note that I have not made the assumption here that the masses of each particle are the same. This allows me to be more general in the subsequent treatments for bodies that have non-uniform densities, although in practice we will usually stick to the uniform case when solving problems in this course.</p>
 <div class="figure align-center" id="fig-c8-energy">
 <a class="reference internal image-reference" href="_images/C8_energy.png"><img alt="A randomly shaped blob rotating about some axis. This mass is split into small pieces, each of which have their own distance from the axis of rotation and tangential velocity. All mass pieces are moving with the same angular velocity." src="_images/C8_energy.png" style="width: 70%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">A randomly shaped blob rotating about some axis. This mass is split into small pieces, each of which have their own distance from the axis of rotation and tangential velocity. All mass pieces are moving with the same angular velocity.</span><a class="headerlink" href="#fig-c8-energy" title="Permalink to this image">#</a></p>
+<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">A randomly shaped blob rotating about some axis. This mass is split into small pieces, each of which have their own distance from the axis of rotation and tangential velocity. All mass pieces are moving with the same angular velocity.</span><a class="headerlink" href="#fig-c8-energy" title="Permalink to this image">#</a></p>
 </div>
 <p>The total kinetic energy <span class="math notranslate nohighlight">\(KE_T\)</span> of the solid body is the sum of the individual kinetic energies of the particles, and so</p>
 <div class="amsmath math notranslate nohighlight">
@@ -470,13 +470,13 @@ KE_T &amp;= \sum_i\frac{m_ir_i^2\omega^2}{2}\\
 <p>There is a key difference between mass and moment of inertia. The mass of an object is intrinsic to it, and when we want to accelerate a body of mass <span class="math notranslate nohighlight">\(m\)</span> along a straight line it does not matter how this mass is distributed. The same is not true for a rotating body. The resistance to changing the rotational motion of a body depends not only on how much mass the body has but how this mass is distributed <strong>with respect to the axis of rotation</strong>. We will explore this further in a couple of worked examples below and some in your tutorials, but table 9.2 in the core textbook shows the range of geometries we will consider in this course.</p>
 <p>Before we embark on some worked examples we need to make one final adjustment to our definition of the moment of inertia. In the definition above we are taking a simple summation of discrete particles of equal mass <span class="math notranslate nohighlight">\(\Delta m\)</span> but it is more useful to take the limit of this as the masses tend to <span class="math notranslate nohighlight">\(0\)</span></p>
 <div class="math notranslate nohighlight" id="equation-eq-c8-moi">
-<span class="eqno">(49)<a class="headerlink" href="#equation-eq-c8-moi" title="Permalink to this equation">#</a></span>\[\begin{split}I &amp;= \lim\limits_{\Delta m \to 0}\sum_i r_i^2\Delta m\nonumber\\
+<span class="eqno">(51)<a class="headerlink" href="#equation-eq-c8-moi" title="Permalink to this equation">#</a></span>\[\begin{split}I &amp;= \lim\limits_{\Delta m \to 0}\sum_i r_i^2\Delta m\nonumber\\
 	&amp;= \int r^2\, \mathrm{d}m\end{split}\]</div>
 <p>The general procedure for solving this integral is:</p>
 <ol class="arabic simple">
 <li><p>Split the body up into small mass elements <span class="math notranslate nohighlight">\(\mathrm{d}m\)</span></p></li>
 <li><p>Change <span class="math notranslate nohighlight">\(\mathrm{d}m\)</span> into a distance element, assuming the body has a uniform density.</p></li>
-<li><p>Integrate equation <a class="reference internal" href="#equation-eq-c8-moi">(49)</a> over this substituted distance element, noting that the limits should cover the whole length of the body with respect to the axis of rotation.</p></li>
+<li><p>Integrate equation <a class="reference internal" href="#equation-eq-c8-moi">(51)</a> over this substituted distance element, noting that the limits should cover the whole length of the body with respect to the axis of rotation.</p></li>
 </ol>
 <p>In some cases we can deviate from this general procedure but this is very much dependent on the geometry of the system.</p>
 <div class="admonition important">
@@ -485,10 +485,10 @@ KE_T &amp;= \sum_i\frac{m_ir_i^2\omega^2}{2}\\
 </div>
 <div class="dropdown tip admonition">
 <p class="admonition-title">Moment of inertia of a ring / thin cylinder</p>
-<p>Consider a ring or hoop of mass <span class="math notranslate nohighlight">\(M\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span> rotating in the <span class="math notranslate nohighlight">\((x,y)\)</span> plane with the origin at the centre of the ring (i.e. the centre of mass).  We split the hoop up into an infinite number of thin slices each of mass <span class="math notranslate nohighlight">\(\mathrm{d}m\)</span>, as shown in <a class="reference internal" href="#fig-c8-hoop"><span class="std std-numref">Fig. 22</span></a>.</p>
+<p>Consider a ring or hoop of mass <span class="math notranslate nohighlight">\(M\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span> rotating in the <span class="math notranslate nohighlight">\((x,y)\)</span> plane with the origin at the centre of the ring (i.e. the centre of mass).  We split the hoop up into an infinite number of thin slices each of mass <span class="math notranslate nohighlight">\(\mathrm{d}m\)</span>, as shown in <a class="reference internal" href="#fig-c8-hoop"><span class="std std-numref">Fig. 23</span></a>.</p>
 <div class="figure align-center" id="fig-c8-hoop">
 <a class="reference internal image-reference" href="_images/C8_hoop.png"><img alt="A thin hoop of mass $M$ rotating about a point through the centre of the hoop and perpendicular to the plane of the hoop. The hoop is split into small mass elements, each of which are a distance $R$ from the axis of rotation." src="_images/C8_hoop.png" style="width: 60%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">A thin hoop of mass <span class="math notranslate nohighlight">\(M\)</span> rotating about a point through the centre of the hoop and perpendicular to the plane of the hoop. The hoop is split into small mass elements, each of which are a distance <span class="math notranslate nohighlight">\(R\)</span> from the axis of rotation.</span><a class="headerlink" href="#fig-c8-hoop" title="Permalink to this image">#</a></p>
+<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">A thin hoop of mass <span class="math notranslate nohighlight">\(M\)</span> rotating about a point through the centre of the hoop and perpendicular to the plane of the hoop. The hoop is split into small mass elements, each of which are a distance <span class="math notranslate nohighlight">\(R\)</span> from the axis of rotation.</span><a class="headerlink" href="#fig-c8-hoop" title="Permalink to this image">#</a></p>
 </div>
 <p>At this point we can deviate slightly from the general procedure I set out previously. The reason we can do this for a hoop or ring is because in this very specific geometry and axis configuration the distance of each of the elements to the axis is constant, in this case it is the radius of the hoop. This means that for this example we can take <span class="math notranslate nohighlight">\(R\)</span> outside of the integral which gives</p>
 <div class="amsmath math notranslate nohighlight">
@@ -499,10 +499,10 @@ I_\text{hoop} &amp;= R^2\int_0^m \,\mathrm{d}m\\
 </div>
 <div class="dropdown tip admonition" id="sec-c8-rod">
 <p class="admonition-title">Moment of inertia of a thin uniform rod</p>
-<p>Consider a thin uniform rod of mass <span class="math notranslate nohighlight">\(m\)</span> and length <span class="math notranslate nohighlight">\(L\)</span> as shown in figure <a class="reference internal" href="#fig-c8-rod"><span class="std std-numref">Fig. 23</span></a>. By “thin” we assume the radius of the rod is negligible. We first rotate the rod about an axis perpendicular to the length of the rod and passing through the centre of mass (labelled (a) in the figure).</p>
+<p>Consider a thin uniform rod of mass <span class="math notranslate nohighlight">\(m\)</span> and length <span class="math notranslate nohighlight">\(L\)</span> as shown in figure <a class="reference internal" href="#fig-c8-rod"><span class="std std-numref">Fig. 24</span></a>. By “thin” we assume the radius of the rod is negligible. We first rotate the rod about an axis perpendicular to the length of the rod and passing through the centre of mass (labelled (a) in the figure).</p>
 <div class="figure align-center" id="fig-c8-rod">
 <a class="reference internal image-reference" href="_images/C8_rod.png"><img alt="Schematic of a thin uniform rod of mass $m$ and length $L$ rotating about an axis a) through the centre of the bar or b) through the end of the bar. Both axes are perpendicular to the length of the bar. The bar is split into small masses, each some distance $r$ from the axis of rotation." src="_images/C8_rod.png" style="width: 60%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">Schematic of a thin uniform rod of mass <span class="math notranslate nohighlight">\(m\)</span> and length <span class="math notranslate nohighlight">\(L\)</span> rotating about an axis a) through the centre of the bar or b) through the end of the bar. Both axes are perpendicular to the length of the bar. The bar is split into small masses, each some distance <span class="math notranslate nohighlight">\(r\)</span> from the axis of rotation.</span><a class="headerlink" href="#fig-c8-rod" title="Permalink to this image">#</a></p>
+<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Schematic of a thin uniform rod of mass <span class="math notranslate nohighlight">\(m\)</span> and length <span class="math notranslate nohighlight">\(L\)</span> rotating about an axis a) through the centre of the bar or b) through the end of the bar. Both axes are perpendicular to the length of the bar. The bar is split into small masses, each some distance <span class="math notranslate nohighlight">\(r\)</span> from the axis of rotation.</span><a class="headerlink" href="#fig-c8-rod" title="Permalink to this image">#</a></p>
 </div>
 <div class="margin sidebar">
 <p class="sidebar-title"></p>
@@ -517,14 +517,14 @@ I_\text{hoop} &amp;= R^2\int_0^m \,\mathrm{d}m\\
 \lambda = \frac{m}{L} &amp;= \frac{\mathrm{d}m}{\mathrm{d}r}\\
 \therefore \mathrm{d}m &amp;= \frac{m}{L}\,\mathrm{d}r
 \end{align*}\]</div>
-<p>We substitute this expression into our general form for the moment of inertial (equation <a class="reference internal" href="#equation-eq-c8-moi">(49)</a>) and solve</p>
+<p>We substitute this expression into our general form for the moment of inertial (equation <a class="reference internal" href="#equation-eq-c8-moi">(51)</a>) and solve</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 I_\text{rod, CM} &amp;= \frac{m}{L}\int_{-L/2}^{L/2}r^2\,\mathrm{d}r\\
 &amp;= \frac{m}{L}\left[\frac{r^3}{3}\right]_{-L/2}^{L/2}\\
 &amp;= \frac{1}{12}ML^2
 \end{align*}\]</div>
-<p>Spinning a rod about the centre is not the only way to do it. What happens if instead we spin the exact same rod about one of the end points, in this case the axis labelled (b) in <a class="reference internal" href="#fig-c8-rod"><span class="std std-numref">Fig. 23</span></a>? The derivation above is identical however because our zero point is now at one end of the bar we need to change the limits of integration. Therefore</p>
+<p>Spinning a rod about the centre is not the only way to do it. What happens if instead we spin the exact same rod about one of the end points, in this case the axis labelled (b) in <a class="reference internal" href="#fig-c8-rod"><span class="std std-numref">Fig. 24</span></a>? The derivation above is identical however because our zero point is now at one end of the bar we need to change the limits of integration. Therefore</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 I_{rod, end} &amp;= \frac{m}{L}\int_{0}^{L}r^2\,\mathrm{d}r\\
@@ -536,10 +536,10 @@ I_{rod, end} &amp;= \frac{m}{L}\int_{0}^{L}r^2\,\mathrm{d}r\\
 <div class="dropdown tip admonition">
 <p class="admonition-title">Moment of inertia of a thin hollow sphere (a shell)</p>
 <p>There are a number of ways to calculate the moment of inertia of a shell rotating about an axis that passes through the centre of mass (i.e. through the diameter of the shell). In the core textbook they show how you can construct this moment of inertia as the sum of an infinite number of thin hoops who radii increase and decrease from top to bottom of the shell. This works but because this approach uses Cartesian coordinates to describe a spherical system the algebra can get a little messy. Instead I am going to describe an alternative approach that makes use of spherical coordinate systems which are, by their very definition, well suited for describing spherical systems.</p>
-<p>Firstly we split the shell up into small rectangles of area <span class="math notranslate nohighlight">\(\mathrm{d}A\)</span>. We use the spherical coordinates <span class="math notranslate nohighlight">\(R\)</span> as the distance from the origin to the volume element, <span class="math notranslate nohighlight">\(\theta\)</span> is the azimuthal angle and <span class="math notranslate nohighlight">\(\phi\)</span> is the zenith angle. These are shown in <a class="reference internal" href="#fig-c8-shell"><span class="std std-numref">Fig. 24</span></a>.</p>
+<p>Firstly we split the shell up into small rectangles of area <span class="math notranslate nohighlight">\(\mathrm{d}A\)</span>. We use the spherical coordinates <span class="math notranslate nohighlight">\(R\)</span> as the distance from the origin to the volume element, <span class="math notranslate nohighlight">\(\theta\)</span> is the azimuthal angle and <span class="math notranslate nohighlight">\(\phi\)</span> is the zenith angle. These are shown in <a class="reference internal" href="#fig-c8-shell"><span class="std std-numref">Fig. 25</span></a>.</p>
 <div class="figure align-center" id="fig-c8-shell">
 <a class="reference internal image-reference" href="_images/C8_shell.png"><img alt="Schematic of a thin spherical shell rotating about an axis through the diameter of the shell. The mass is split into small surface areas with the small area defined using spherical polar coordinates $(r,\theta,\phi)$." src="_images/C8_shell.png" style="width: 60%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Schematic of a thin spherical shell rotating about an axis through the diameter of the shell. The mass is split into small surface areas with the small area defined using spherical polar coordinates <span class="math notranslate nohighlight">\((r,\theta,\phi)\)</span>.</span><a class="headerlink" href="#fig-c8-shell" title="Permalink to this image">#</a></p>
+<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">Schematic of a thin spherical shell rotating about an axis through the diameter of the shell. The mass is split into small surface areas with the small area defined using spherical polar coordinates <span class="math notranslate nohighlight">\((r,\theta,\phi)\)</span>.</span><a class="headerlink" href="#fig-c8-shell" title="Permalink to this image">#</a></p>
 </div>
 <p>This area element can be defined in terms of the three components of the spherical coordinate system, namely</p>
 <div class="amsmath math notranslate nohighlight">
@@ -558,9 +558,9 @@ I_{rod, end} &amp;= \frac{m}{L}\int_{0}^{L}r^2\,\mathrm{d}r\\
 <p><span class="math notranslate nohighlight">\(R\)</span> is the distance from the origin, i.e. the radius of the sphere. For a rotating system we need the perpendicular distance from mass element to axis of rotation.</p>
 </div>
 </div>
-<p>where <span class="math notranslate nohighlight">\(\sigma\)</span> is the area density (mass per unit area). We next need to determine an expression for the distance from the axis of rotation to the mass element, which is <strong>not</strong> the same as <span class="math notranslate nohighlight">\(R\)</span>. Some simple trigonometry tells us that <span class="math notranslate nohighlight">\(r=R\sin\phi\)</span>, and we can now substitute this into our mass element expression above which in turn we substitute into equation <a class="reference internal" href="#equation-eq-c8-moi">(49)</a> and solve:</p>
+<p>where <span class="math notranslate nohighlight">\(\sigma\)</span> is the area density (mass per unit area). We next need to determine an expression for the distance from the axis of rotation to the mass element, which is <strong>not</strong> the same as <span class="math notranslate nohighlight">\(R\)</span>. Some simple trigonometry tells us that <span class="math notranslate nohighlight">\(r=R\sin\phi\)</span>, and we can now substitute this into our mass element expression above which in turn we substitute into equation <a class="reference internal" href="#equation-eq-c8-moi">(51)</a> and solve:</p>
 <div class="math notranslate nohighlight" id="equation-eq-c8-shell1">
-<span class="eqno">(50)<a class="headerlink" href="#equation-eq-c8-shell1" title="Permalink to this equation">#</a></span>\[\begin{split}I_\text{shell} &amp;= \int r^2\,\mathrm{d}m\nonumber\\
+<span class="eqno">(52)<a class="headerlink" href="#equation-eq-c8-shell1" title="Permalink to this equation">#</a></span>\[\begin{split}I_\text{shell} &amp;= \int r^2\,\mathrm{d}m\nonumber\\
 &amp;= \int r^2 \sigma R^2\sin\phi\,\mathrm{d}\theta\,\mathrm{d}\phi\nonumber\\
 &amp;= \int R^2\sin^2\phi \sigma R^2\sin\phi\,\mathrm{d}\theta\,\mathrm{d}\phi\nonumber\\
 &amp;= R^4\sigma \int_0^{2\pi}\mathrm{d\theta}\int_0^{\pi} \sin^3\phi\,\mathrm{d}\phi\nonumber\\
@@ -575,7 +575,7 @@ I_{rod, end} &amp;= \frac{m}{L}\int_{0}^{L}r^2\,\mathrm{d}r\\
 		&amp;= \left[-\cos\phi\right]_0^{\pi} - \left[\frac{u^3}{3}\right]_{-1}^1\\
 		&amp;= \frac{4}{3}
 \end{align*}\]</div>
-<p>We can use this result for the integral in equation <a class="reference internal" href="#equation-eq-c8-shell1">(50)</a> to finally find</p>
+<p>We can use this result for the integral in equation <a class="reference internal" href="#equation-eq-c8-shell1">(52)</a> to finally find</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 I_\text{shell} &amp;= 2\pi\sigma R^4  \times \frac{4}{3}\\
@@ -610,8 +610,8 @@ I_\text{shell} &amp;= 2\pi\sigma R^4  \times \frac{4}{3}\\
 <h3>Using symmetry<a class="headerlink" href="#using-symmetry" title="Permalink to this headline">#</a></h3>
 <p>All of the examples we have considered so far have been solved by adding up the moment of inertia contributions from small point masses across the whole extended shape we are interested in. In other words</p>
 <div class="math notranslate nohighlight" id="equation-eq-moi-symm">
-<span class="eqno">(51)<a class="headerlink" href="#equation-eq-moi-symm" title="Permalink to this equation">#</a></span>\[I = \int\mathrm{d}I\]</div>
-<p>This may seem a silly statement to make but it does allow us to leverage symmetry to make the process easier for certain shapes. If it is possible to construct one shape out of an infinite number of another shape <strong>for which we know the moment of inertia expression</strong>, then we can use <a class="reference internal" href="#equation-eq-moi-symm">(51)</a> with the moment of inertia for these “infinite shapes” on the right hand side.</p>
+<span class="eqno">(53)<a class="headerlink" href="#equation-eq-moi-symm" title="Permalink to this equation">#</a></span>\[I = \int\mathrm{d}I\]</div>
+<p>This may seem a silly statement to make but it does allow us to leverage symmetry to make the process easier for certain shapes. If it is possible to construct one shape out of an infinite number of another shape <strong>for which we know the moment of inertia expression</strong>, then we can use <a class="reference internal" href="#equation-eq-moi-symm">(53)</a> with the moment of inertia for these “infinite shapes” on the right hand side.</p>
 <p>This is a lot clearer by going through two more examples, the solid disc and the solid sphere.</p>
 <div class="dropdown tip admonition">
 <p class="admonition-title">Moment of inertia of a thin solid disc</p>
@@ -621,7 +621,7 @@ I_\text{shell} &amp;= 2\pi\sigma R^4  \times \frac{4}{3}\\
     &amp;= r^2 \sigma,\mathrm{d}A\\
     &amp;= r^2 \frac{M}{A}\times 2\pi r\,\mathrm{d}r\end{split}\]</div>
 <p>where the surface area of a hoop of infinitesimal thickness is <span class="math notranslate nohighlight">\(\mathrm{d}A=2\pi r\,\mathrm{d}r\)</span>.</p>
-<p>Substitute this expression into <a class="reference internal" href="#equation-eq-moi-symm">(51)</a> gives</p>
+<p>Substitute this expression into <a class="reference internal" href="#equation-eq-moi-symm">(53)</a> gives</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}I_\text{disc} &amp;= \int \mathrm{d}I_\text{ring}\\
     &amp;= \frac{M}{A}2\pi \int_0^Rr^3\,\mathrm{d}r\\
@@ -658,8 +658,8 @@ I’m not going to derive this here as it’s in the core textbook and a number 
 <div class="section" id="paralled-axis-theorem">
 <h3>Paralled axis theorem<a class="headerlink" href="#paralled-axis-theorem" title="Permalink to this headline">#</a></h3>
 <p>The moment of inertia about a parallel axis some distance <span class="math notranslate nohighlight">\(D\)</span> away from the centre of mass axis is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-940e5ca5-76ba-4bb7-bf25-114fd98dfa8c">
-<span class="eqno">(52)<a class="headerlink" href="#equation-940e5ca5-76ba-4bb7-bf25-114fd98dfa8c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c51ddfe3-3129-402a-84ba-4977a560e49a">
+<span class="eqno">(54)<a class="headerlink" href="#equation-c51ddfe3-3129-402a-84ba-4977a560e49a" title="Permalink to this equation">#</a></span>\[\begin{align}
 I &amp;= I_{\text{CM}} + MD^2
 \end{align}\]</div>
 </div>
